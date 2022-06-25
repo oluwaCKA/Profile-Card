@@ -33,7 +33,7 @@ body {
     
 }
 
-h3, .num {
+h1, .num {
     font-weight: 700;
     text-align: center;
 }
@@ -47,7 +47,7 @@ h3, .num {
     text-align: center;
 }
 
-h3 {
+h1 {
     white-space: nowrap;
     word-spacing: -8px;
     margin-right: 10px;
