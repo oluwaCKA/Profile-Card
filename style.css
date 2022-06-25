@@ -1,0 +1,230 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.num {
+    font-size: 18px;
+}
+
+
+body {
+    background-image: url(./images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 161, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', monospace;
+    font-size: 18px;
+}
+
+.bgcard {
+   position: absolute;
+    border-top: 2px;
+    border-bottom: 0;
+    margin-top: 0;
+    
+}
+
+h3, .num {
+    font-weight: 700;
+    text-align: center;
+}
+.gray {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%)
+}
+
+.plf {
+    font-size: 13px;
+    text-align: center;
+}
+
+h3 {
+    white-space: nowrap;
+    word-spacing: -8px;
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+#card {
+    color: rgb(7,0,0);
+    background-color: #faf9f9;
+    width: 350px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.4);
+    border-radius: 15px;
+
+}
+
+#card .bgcard {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px transparent;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;   
+}
+
+.profile img {
+    height: 111px;
+    position: relative;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-top: -70px;
+    padding: 10px 0 10px 0;
+}
+
+
+.profile {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 180px;
+    padding-top: 150px;  
+}
+
+#name-card {
+    display: flex;
+    justify-items: left;
+    padding-top: 20px;
+    height: 40px;
+    margin: -20px 60px 5px 60px;
+    text-align: center;
+}
+
+.age {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 14px;
+    padding-top: 2px;
+}
+
+.country {
+    padding-top: 15px;
+    margin: -20px 100px -90px 40%;
+}
+
+hr {
+    margin: -165px 0 50px 0;
+    padding-top: 0px;   
+}
+
+
+#flp {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    line-height: 10px;
+    margin: -160px 50px 0 30px;
+    padding-top: 120px;
+    line-height: 5px;   
+}
+
+.attribution {
+     font-size: 11px; text-align: center;
+     margin-top: -190px;
+     margin-bottom: 90px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+a:hover {
+    animation-name: attribution;
+    animation-duration: 5s;
+    color: black;
+}
+
+#card .attribution {
+    position: absolute;
+}
+
+@keyframes attribution {
+    0% {
+        background-color:hsl(0, 1%, 60%);
+    }
+    100% {
+        background-color: cyan;
+    }
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+@media screen and ( min-width: 1440px) {
+    body, 
+    html {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .attribution {
+        font-size: 11px; text-align: center;
+        margin-top: -190px 0 90px 0;
+   
+   }
+   
+   .attribution a { 
+       color: hsl(228, 45%, 44%);
+       text-decoration: none;
+   }
+   
+   a:hover {
+       animation-name: attribution;
+       animation-duration: 5s;
+       color: black;
+   }
+   
+}
+
+@media screen and (max-width: 375px) {
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    #card {
+       margin: 140px 50px 0 50px;
+    }
+
+    #card .attribution {
+        position: absolute;
+        margin: auto;
+    }
+    .attribution {
+        font-size: 11px; text-align: center;
+        margin-top: 0;
+        margin-bottom: 100px;
+   
+   }
+   
+   .attribution a { 
+       color: hsl(228, 45%, 44%);
+       text-decoration: none;
+   }
+   
+   a:hover {
+       animation-name: attribution;
+       animation-duration: 5s;
+       color: black;
+   }
+   
+}
