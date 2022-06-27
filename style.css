@@ -5,9 +5,6 @@ html {
     margin: auto;
 }
 
-.num {
-    font-size: 18px;
-}
 
 
 body {
@@ -33,7 +30,7 @@ body {
     
 }
 
-h1, .num {
+h1 {
     font-weight: 700;
     text-align: center;
 }
@@ -42,16 +39,17 @@ h1, .num {
     color: hsl(0, 0%, 59%)
 }
 
-.plf {
-    font-size: 13px;
+li {
+    font-size: 15px;
+    color: gray;
     text-align: center;
 }
 
 h1 {
     white-space: nowrap;
     word-spacing: -8px;
-    margin-right: 10px;
-    margin-left: -20px;
+    margin-right: 5px;
+    margin-left: -40px;
 }
 
 #card {
@@ -81,7 +79,6 @@ h1 {
     height: 111px;
     position: relative;
     border-radius: 50%;
-    margin-top: 100px;
     margin-left: 70px;
     margin-top: -70px;
     padding: 10px 0 10px 0;
@@ -90,7 +87,7 @@ h1 {
 
 .profile {
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 60px;
     margin-bottom: 180px;
     padding-top: 150px;  
 }
@@ -98,17 +95,17 @@ h1 {
 #name-card {
     display: flex;
     justify-items: left;
-    padding-top: 20px;
+    padding-top: 10px;
     height: 40px;
-    margin: -20px 60px 5px 60px;
+    margin: -20px 80px 5px 60px;
     text-align: center;
 }
 
 .age {
     font-weight: 700;
     font-size: 20px;
-    margin-right: 10px;
-    padding-top: 2px;
+    margin-right: 14px;
+    padding-top: 10px;
 }
 
 .country {
@@ -117,19 +114,27 @@ h1 {
 }
 
 hr {
-    margin: -165px 0 50px 0;
-    padding-top: 0px;   
+    margin: -150px 0 50px 0; 
 }
 
 
-#flp {
+.stats {
+    list-style: none;
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    line-height: 10px;
-    margin: -160px 50px 0 30px;
-    padding-top: 120px;
-    line-height: 5px;   
+    margin: -30px 20px 0 -20px; 
+}
+
+.stats-num {
+    display: flex;
+    justify-content: center;
+    line-height: 1em;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(7,0,0);
 }
 
 .attribution {
@@ -203,6 +208,7 @@ a:hover {
     }
     #card {
        margin: 140px 50px 0 50px;
+       margin: auto;
     }
 
     #card .attribution {
